@@ -94,7 +94,210 @@
       <Text>Ce sont les modules de navette, utilisés pour voyager entre les mondes. {THING:StructureLaunchPad} est requis.</Text>
     </StationpediaPage>
 
+<StationpediaPage>
+      <Key>TradingPage</Key>
+      <Title>Commerce</Title>
+      <Text>Le commerce est une partie essentielle de l'existence d'un {LINK: Stationers; Stationers}, en particulier sur des mondes plus extrêmes, où les nouveaux cadets peuvent être mis au défi de survivre sans aide.
 
+Il existe trois niveaux distincts de contacts. Ces contacts ont de plus en plus des difficultés à contacter et traînent environ 20 minutes avant qu'ils ne partent et qu'un autre prenne leur place, vous devrez donc trouver les contacts les plus difficiles si vous souhaitez consulter de nombreux commerçants.
+
+Les contacts doivent être résolus par la parabole avant de pouvoir déterminer avec quelle précision elle est pointée vers le contact. Le temps de résolution est déterminé par la puissance de sortie de la parabole multipliée par l'alignement de la parabole, sur la puissance de résolution attendue du contact. Si le contact se résout trop lentement, cela indique probablement que vous n'êtes pas du tout proche de la cible et que vous devriez essayer un angle très différent. Alternativement, le contact peut avoir une puissance attendue très élevée, et votre parabole actuelle n'est tout simplement pas assez grande pour le résoudre dans un délai raisonnable. Le processus de résolution n'utilise que 10 % de la puissance réelle sur laquelle votre parabole est réglée.
+
+Une fois que vous avez résolu la position des contacts, vous pourrez appuyer sur le bouton d'interrogation. Semblable à la résolution, vous devrez atterrir suffisamment de puissance sur le contact. La boîte de dialogue d'interrogation vous informera des calculs en cours. L'interrogatoire a un minimum difficile, et si la parabole n'est pas assez bien orientée ou si la puissance est trop faible, vous ne pourrez pas démarrer le processus. L'interrogatoire a également une exigence de temps, les contacts plus durs prenant beaucoup plus de temps, vous voudrez donc utiliser des puissances élevées pour vous assurer de terminer avant que le commerçant ne passe à autre chose. Une fois l'interrogatoire terminé, vous pouvez débarquer le commerçant comme avant.
+
+{LIST_OF_TRADING_DEVICES}
+      </Text>
+</StationpediaPage>
+<StationpediaPage>
+      <Key>ConstructionPage</Key>
+      <Title>Construction</Title>
+      <DisplayFilter>Guides</DisplayFilter>
+      <Text>{HEADER:Commencement}
+En règle générale, vous utiliserez {LINK:KitPage;kits} pour lancer la construction, puis une variété de {LINK:ToolPage;tools} et de {LINK:ResourcePage;resources} pour terminer. Portez une attention particulière au nombre de pièces de votre kit nécessaire pour construire ce que vous avez sélectionné, car certaines structures nécessitent plus d'une pile pour être consommées. Pour certains kits, vous aurez plusieurs options, utilisez la {COLORRED:Scroll Wheel} pour changer l'option actuelle que vous cherchez à construire.
+
+{HEADER:États de construction}
+Certaines structures auront plusieurs états de construction qui nécessitent différentes combinaisons pour se terminer. Votre info-bulle vous indiquera la combinaison dont vous avez besoin pour compléter la structure. Parfois, vous aurez besoin d'avoir deux objets, un dans chaque main, pour terminer un état de construction. Certains outils devront d'abord être activés, ce qui peut être fait en appuyant sur {KEY:ToggleHandPower} pendant qu'il est dans votre main active.
+
+{HEADER:Info-bulles}
+Si vous regardez directement une structure incomplète, vous obtiendrez des informations sur ce que vous devez faire pour la compléter. Si vous avez une {LINK:ToolPage;tool} dans votre main et que ce n'est pas la bonne {LINK:ToolPage;tool}, une info-bulle apparaîtra vous indiquant ce que vous auriez besoin d'utiliser pour la déconstruire.
+
+{HEADER:Pression}
+Lors de la construction, il est important de noter que la pression est mesurée sous forme de différentiel. La plupart des structures ont une limite de pression de 200 kPa : si la différence entre l'intérieur et l'extérieur est supérieure à cela, vous avez des problèmes.
+      </Text>
+    </StationpediaPage>
+
+    <StationpediaPage>
+      <Key>MusicPage</Key>
+      <Title>Fait de la musique</Title>
+      <DisplayFilter>Guides</DisplayFilter>
+      <Text>le {LINK:ODA;ODA} n'approuve pas les bandes sonores ou autres distractions.
+En tant que tels, les {LINK:Stationeers;Stationeers} ont dû créer leur propre accompagnement musical pour le travail exigeant de construction et de maintenance d'infrastructures hors du monde.
+Au centre de ce passe-temps se trouve le séquenceur pas à pas, qui permet aux Stationeers de séquencer de courts motifs musicaux ou des boucles.
+
+{HEADER: MUSIQUE FAIS MAISON - MISE EN ROUTE}
+
+1 : Connectez 8 {THING:DeviceStepUnit} à votre séquenceur pas à pas via le port de données sur le côté gauche.
+
+2 : Étiquetez chaque unité de pas, puis affectez les unités de pas 1 à 8 sur le séquenceur pas à pas à l'aide du tournevis.
+
+3 : Sélectionnez le haut-parleur de sortie (par exemple {THING:PassiveSpeaker}) où le séquenceur jouera les sons. Celui-ci doit être connecté au réseau logique sur le côté droit du séquenceur.
+
+4 : Placez un {THING:StopWatch} et utilisez un {THING:StructureLogicReader} et un {THING:StructureLogicWriter} pour écrire l'heure dans la variable time du séquenceur.
+
+5 : Définissez le BPM sur le séquenceur à l'aide d'un {THING:StructureLogicDial} et d'un {THING:StructureLogicWriter} pour écrire dans la variable BPM du séquenceur. Un bpm plus élevé jouera la séquence plus rapidement.
+
+6 : Insérez une cartouche de son de votre choix et sélectionnez la variante de son que vous souhaitez jouer en appuyant sur les boutons fléchés situés au-dessus et en dessous de la fente de la cartouche de son.
+
+7: Choisissez la hauteur des sons à jouer en réglant le cadran de chacune de vos unités à 8 pas sur la note souhaitée. Avec la batterie, chaque note est un son de batterie différent. Vous pouvez tester vos sons en appuyant sur le bouton d'activation de chaque unité de pas (avec le séquenceur inactif).
+
+8 : Soyez bizarre avec le {THING:DeviceLfoVolume}.
+
+9 : Enfin, activez le séquenceur, Vibeoneer.
+      </Text>
+    </StationpediaPage>
+
+<StationpediaPage>
+      <Key>TemperatureControlPage</Key>
+      <Title>Controle de température</Title>
+      <DisplayFilter>Guides</DisplayFilter>
+<Text>Afin de contrôler la température d'un système, nous devons soit lui ajouter de la chaleur, augmentant ainsi sa température, soit lui retirer de la chaleur, ce qui le refroidit, c'est l'idée de base du contrôle de la température. Les appareils qui atteignent cet objectif pour vous sont {THING:ItemWallHeater}, {THING:ItemWallCooler}, {THING:StructurePipeRadiator} et {THING:StructureAirConditioner}.
+
+REMARQUE : Il existe de nombreuses méthodes de contrôle de la température. Certains n'impliquent aucun des dispositifs mentionnés. Ici, nous couvrons les bases.
+
+Il est important de comprendre votre environnement avant d'installer tout type de contrôle de température. Le volume de gaz ou de liquide est un facteur important lors du choix de votre méthode de contrôle de la température. Un {THING:StructureTankSmall} peut contenir jusqu'à 6 000 L, tandis qu'un {THING:StructureTankBig} peut contenir jusqu'à 50 000 L, ce qui signifie que si les deux sont pleins, le petit réservoir réagira plus rapidement aux changements de température. Une pièce est un espace pouvant contenir une certaine quantité de gaz. Plus il est grand, plus il pourra contenir de volume, donc les mêmes règles s'appliquent généralement aux réservoirs et aux chambres.
+
+{HEADER:RÉSEAU DE CANALISATIONS}
+
+Un réseau de canalisations est constitué d'un ou de plusieurs segments de canalisation connectés les uns aux autres sans aucune séparation en aucun point. Un réseau de canalisations partage la même atmosphère partout le long de la canalisation, quelle que soit sa taille. Si vous modifiez la température ou la pression à une extrémité du réseau, l'extrémité la plus éloignée subira immédiatement le même changement sans délai.
+
+L'ajout d'appareils à un réseau peut le diviser en deux réseaux différents. Par exemple, l'ajout d'un {THING:StructureVolumePump} à un réseau de canalisations divisera le réseau en deux réseaux : un avant la pompe et un après celle-ci.
+
+Utilisez {THING:ItemTablet} avec {THING:CartridgeAtmosAnalyser} installé pour afficher des informations sur le contenu de n'importe quel réseau de canalisations.
+
+{HEADER:RADIATEURS}
+Fabriqué dans la cintreuse de tuyaux, un {THING:StructurePipeRadiator} vous aidera à échanger de la chaleur entre les tuyaux et leur environnement environnant. Ils fonctionnent à la fois sur des tuyaux et des tuyaux isolés, ainsi que sur des variantes liquides.
+
+Dans des conditions normales, un segment de tuyau échangera de la chaleur avec son environnement, mais l'ajout d'un radiateur à ce segment de tuyau accélérera considérablement le processus. Un segment de tuyau continuera à échanger de la chaleur avec l'atmosphère environnante jusqu'à ce que les deux s'égalisent en température.
+
+{HEADER:REFROIDISSEMENT PASSIF}
+Vous pouvez refroidir ou chauffer n'importe quel environnement en utilisant un {THING:StructurePipeRadiator} pour échanger de la chaleur entre deux atmosphères. Un exemple de ceci serait de placer un tuyau sur le mur, de le remplir de gaz et de placer des radiateurs sur le tuyau. Maintenant, les deux atmosphères du tuyau et de la pièce échangeront leur température jusqu'à ce que leurs environnements s'égalisent.
+
+{HEADER:CHAUFFAGE MURAL}
+Le {THING:ItemWallHeater} est un appareil simple qui peut être installé sur un mur ou un cadre et connecté à l'alimentation. Lorsqu'il est allumé, il commencera à chauffer l'environnement environnant. Il consomme 1010W de puissance et peut être contrôlé par des puces logiques pour fonctionner lorsque la température atteint un certain niveau.
+
+{HEADER:REFROIDISSEUR MURAL}
+Le {THING:ItemWallCooler} complète le radiateur mural, qui ne peut qu'augmenter la température. Le refroidisseur mural fonctionne en puisant la chaleur de l'atmosphère environnante et en ajoutant cette chaleur dans son réseau de canalisations. Afin de faire fonctionner correctement le refroidisseur mural, vous devrez connecter des tuyaux au refroidisseur mural et remplir le réseau de tuyaux connecté avec n'importe quel type de gaz. La capacité calorifique et le volume du gaz détermineront à quelle vitesse il réagit aux changements de température.
+
+Plus la différence de température entre le gaz stocké dans les tuyaux et la pièce est élevée, moins le refroidisseur mural sera efficace. Donc, pour que le refroidisseur mural fonctionne à une efficacité acceptable, vous devrez vous débarrasser de la chaleur qui s'accumule dans les tuyaux qui y sont connectés. Une pratique courante serait de faire passer les tuyaux vers l'extérieur et d'utiliser des radiateurs sur la section extérieure des tuyaux pour se débarrasser de la chaleur.
+
+Moins le refroidisseur mural est efficace, moins il consomme d'énergie. Il consommera 1010W à efficacité maximale. Le refroidisseur mural peut être contrôlé par des puces logiques pour fonctionner lorsque la température atteint un certain degré.
+
+Si le refroidisseur mural affiche une erreur, il manque l'un des éléments suivants :
+- Raccordement du tuyau au refroidisseur mural.
+- Gaz dans les tuyaux raccordés ou pression trop faible.
+- L'atmosphère dans le milieu environnant ou la pression est trop basse.
+
+{HEADER:CLIMATISEUR}
+Le {THING:StructureAirConditioner} dans sa forme de base fonctionne exactement comme le refroidisseur mural et peut bénéficier des mêmes conceptions. Cependant, il est plus puissant. Il refroidit plus rapidement et consomme beaucoup plus d'énergie en fonction de la situation, ce qui le rend plus adapté pour traiter de gros volumes et de grandes surfaces. Il peut chauffer ou refroidir selon le réglage.
+
+CLIMATISEUR : COMMENT ÇA MARCHE
+Le climatiseur dispose de 3 raccords de tuyauterie (Entrée, Sortie, Déchets). Le gaz entre par le côté entrée, puis, selon le réglage, de la chaleur est ajoutée ou retirée du gaz entrant et ajoutée au tuyau d'évacuation. Le gaz de sortie sortira alors par la connexion de sortie, plus froid ou plus chaud selon le réglage.
+Vous pouvez connecter le tuyau d'entrée aux tuyaux de sortie (vous pouvez voir s'ils sont connectés s'ils ont tous les deux le même numéro de réseau) : cela vous donnera plus de contrôle sur la température, car le gaz n'atteindra pas la température cible après le premier passage. Il faudra du temps et de l'énergie pour retirer ou ajouter de la chaleur à n'importe quel gaz.
+
+La façon dont vous installez et configurez votre climatiseur dépend de ce que vous essayez de refroidir ou de chauffer. Pour une pièce, vous aurez besoin d'un évent passif à l'intérieur de la pièce connecté à l'entrée et à la sortie du climatiseur, tandis que le tuyau d'évacuation doit être rempli d'un gaz réfrigérant.
+
+Le climatiseur n'a pas besoin d'être à l'intérieur de la pièce. La seule partie de cette configuration qui doit être dans la pièce est l'évent passif qui fera le tour de l'atmosphère de la pièce jusqu'au climatiseur pour être refroidi ou chauffé.
+
+Vous pouvez utiliser un seul climatiseur pour chauffer et refroidir. Il vous suffit de modifier le réglage de la température cible sur le panneau. Cependant, si vous souhaitez automatiser le refroidissement et le chauffage en même temps, vous aurez besoin d'un climatiseur pour le refroidissement et d'un autre pour le chauffage, car le réglage sur le panneau ne peut être modifié que manuellement.
+
+L'installation de plusieurs climatiseurs sur le même réseau de canalisations peut être utile si vous avez besoin que les choses aillent plus vite ou si vous devez en utiliser certains pour le chauffage et d'autres pour le refroidissement. Pour ce faire, connectez les entrées et les sorties des climatiseurs ensemble et partagez le même réseau de tuyaux pour leurs entrées et sorties. Le réseau de canalisations d'évacuation peut également être partagé entre eux, mais il doit être séparé du réseau de canalisations d'entrée/sortie. La même idée s'applique lors de l'utilisation du climatiseur pour contrôler la température des réservoirs. Cependant, au lieu d'utiliser un évent passif, vous devrez connecter directement le réservoir au climatiseur.
+
+CLIMATISEUR : N'OUBLIEZ PAS
+- Plus la différence de température entre le tuyau d'entrée et le tuyau d'évacuation est grande, plus le climatiseur utilisera de puissance
+- La puissance consommée par le climatiseur peut dépasser 5 kW, il est donc recommandé d'utiliser des câbles lourds pour alimenter les climatiseurs.
+- Faire passer le tuyau d'évacuation à l'extérieur et l'égaliser avec l'atmosphère extérieure n'est pas toujours la meilleure option : le gaz que vous mettez à l'intérieur peut être appliqué ailleurs dans votre base.
+
+CLIMATISEUR : CONTRÔLE DE LA TEMPÉRATURE DE BASE
+Il existe de nombreuses façons de contrôler la température de votre base à l'aide de climatiseurs - c'est une façon d'atteindre cet objectif :
+Étape 1 : Exécutez un réseau de tuyaux unique autour de votre base et installez des évents passifs connectés à ce tuyau dans chaque pièce que vous souhaitez contrôler par cette configuration. C'est 'Réseau A'
+Étape 2 : Connectez le « réseau A » à l'entrée et à la sortie d'un climatiseur.
+Étape 3 : Connectez le tuyau d'évacuation à un autre réseau et faites-le passer vers l'extérieur. Installez des radiateurs sur ce réseau.
+C'est la configuration de base. Pour l'automatiser, vous aurez besoin d'un analyseur de tuyaux sur le réseau A, puis lisez la température et faites fonctionner votre ou vos climatiseurs en conséquence.
+Bonne chance Cadet(te) !
+      </Text>
+    </StationpediaPage>
+
+<StationpediaPage>
+      <Key>AutomatedRocketPage</Key>
+      <Title>Modules de fusée automatisés (M.F.A)</Title>
+      <DisplayFilter>Guides</DisplayFilter>
+      <Text>Les fusées automatisées sont des véhicules sans équipage qui peuvent être envoyés hors du monde pour récupérer une gamme de ressources. La fusée peut être contrôlée par {LINK:LogicUnitPage;logic} ou {LINK:LogicUnitPage;IC} ou un mélange de ces systèmes.
+      
+Une fois lancées, les fusées automatisées recherchent des planètes ou des astéroïdes avec des ressources exploitables, selon les MODULES avec lesquels elles ont été construites. Les fusées peuvent être programmées pour exploiter toutes les ressources disponibles, puis se déplacer vers une autre planète ou rentrer chez elles. Leur portée - et donc la quantité de ressources qu'ils peuvent collecter - est déterminée par leur carburant disponible. S'ils manquent de carburant, ils sont perdus dans le vide pour toujours.
+      
+
+{EN-TÊTE : MODULES}
+Le système de fusée automatisé est composé de quatre modules fondamentaux, plus un moteur et un ou plusieurs réservoirs de carburant :
+
+* MODULE D'AUTOMATISATION - le {THING:StructureModularRocketAutomation} est le système de contrôle, transmettant les données aux différents modules.
+
+* MODULE MINIER - cela effectue l'opération minière. Actuellement, il s'agit de {THING:StructureRocketModuleMiningOre}, {THING:StructureModularRocketIceMining}, {THING:StructureRocketModuleMiningJunk} et {THING:StructureModularRocketGasMining}.
+
+* COUPLEUR - il relie les modules miniers aux modules de stockage, en faisant passer le matériel de l'un à l'autre. Plus précisément, le {THING:StructureModularRocketCouplingDown} transmet les ressources à un module de stockage SOUS celui-ci. Le {THING:StructureModularRocketCouplingUp} transmet les ressources à un module de stockage AU-DESSUS. La fusée ne collectera pas de ressources sans cet élément.
+
+* MODULE DE STOCKAGE - ce module reçoit les ressources d'un module de minage via un coupleur et les stocke jusqu'au retour de la fusée. Cela inclut actuellement {THING:StructureRocketModuleSilo} pour les minerais et {THING:StructureModularRocketFueltank01} pour le gaz. Les modules de stockage peuvent être connectés à un {LINK:ImportExportPage;chute network}, mais sont fermés par défaut. Utilisez {LINK:LogicUnitPage;logic} pour le définir sur 'ouvert'.
+
+
+{HEADER :CONDITIONS DE LANCEMENT}
+* PUISSANCE - tous les modules de la fusée doivent être alimentés. Notez que les modules sont créés "On" par défaut, mais peuvent être activés et désactivés à l'aide de connexions {LINK:LogicUnitPage;logic}.
+
+* CARBURANT - la fusée doit avoir au moins un réservoir de carburant et suffisamment de carburant pour le décollage (au moins 500 mols). Notez que la fusée nécessite également 500 mols pour atterrir ET consomme 5 mols par tick pendant la phase de déplacement.
+
+* CONSTRUCTION - La fusée doit être correctement assemblée (voir MODULES ci-dessus)
+
+* PROGRAMMATION - La fusée est contrôlée par le {LINK:LogicUnitPage;IC system} (voir ci-dessous)
+
+
+{EN-TÊTE :MODES FUSÉE}
+Le mode de la fusée est défini via la valeur "activer" de l'appareil. Le mode détermine le comportement actuel :
+
+0 : inactif (à la base)
+1 : Lancement
+2 : Voyager
+3 : Arrivé
+4 : Inactif à destination (prêt à activer les modules de minage).
+5 : Retour à la maison
+6 : Retourné
+7 : Perdu
+
+
+{HEADER : COMMANDES UNIQUES DE ROCKET}
+* CARBURANT DANS LE RÉSERVOIR RESTANT - Obtient le carburant restant dans le réservoir de carburant de votre fusée.
+* COÛT DE RETOUR DE CARBURANT - Obtient le coût du carburant pour ramener la fusée dans votre monde actuel.
+* ROCKET MODE - Obtient la valeur actuelle du RocketMode (0-7).
+* BIENS DE COLLECTION - Renvoie 0 ou 1 selon que le système de fusée actuel a ou non la capacité de collecter des ressources sur la planète.
+
+      </Text>
+    </StationpediaPage>
+
+<StationpediaPage>
+      <Key>TravelPage</Key>
+      <Title>Voyager vers d'autres planètes</Title>
+      <DisplayFilter>Guides</DisplayFilter>
+      <Text>Attendez! Ne me ferme pas encore ! Les conditions suivantes doivent être remplies pour le lancement :
+
+- Fusée entièrement construite : au moins 3 modules de base
+- Entièrement alimenté {THING:StructureModularRocketFueltank01}
+- Ratio de mélange de carburant correct - un mélange 2:1 de {GAS:Volatiles} et {GAS:Oxygen}.
+- Alimentation fournie au {THING:StructureLaunchPad}
+- Tous les joueurs assis dans {THING:StructureModularRocketCommand01}
+
+Vous trouverez ci-dessous les identifiants WORLD TRAVEL. Vous pouvez les utiliser pour voyager vers des planètes spécifiques, lorsqu'ils sont combinés avec une {LINK:RocketShuttlePage;Rocket Shuttle} et une {LINK:LogicUnitPage;Logic Units} complétées.
+       
+Écrivez simplement le hachage dans la variable de réglage sur {THING:StructureLaunchPad} avec un {THING:StructureLogicWriter} et un {THING:StructureLogicMemory}. Remarque : Vous pouvez cliquer sur un hachage pour le copier dans le presse-papiers.
+{LIST}{WORLD_HASHES}{/LIST}
+      </Text>
+    </StationpediaPage>
     <!--
     ~~~~~~~~~~~~~~~~~~~~~~~~~
     |                     TEMPLATES               |
