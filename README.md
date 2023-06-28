@@ -1,4 +1,4 @@
-![alt text](https://github.com/brest0ou]/[Traduction-FR]/blob/[master]/preview.png?raw=true)
+![alt text]([https://github.com/brest0ou]/[Traduction-FR]/blob/[master]/preview.png](https://github.com/brest0ou/Traduction-FR/blob/master/Preview.png)?raw=true)
 
 # Traduction-FR!
 
