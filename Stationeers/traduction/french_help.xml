@@ -89,6 +89,38 @@
 </Text>
     </StationpediaPage>
     <StationpediaPage>
+          <Key>RocketShuttleModulesHelpPage</Key>
+          <Title>Modules de navette spatiale</Title>
+          <DisplayFilter>Guides</DisplayFilter>
+          <Text>{HEADER:Module Cargo de la Navette Spatiale}
+
+Le {THING:StructureModularRocketCargo01} peut contenir deux caisses à dix emplacements. Vous pouvez avoir plusieurs modules de fret sur votre fusée. La fusée peut soulever jusqu'à sept modules au total.
+
+{HEADER :Commande de fusée modulaire}
+
+Le {THING:StructureModularRocketCommand01} doit être placé au-dessus de la fusée. Il évaluera l'état de préparation de la fusée pour le vol. Une fois toutes les conditions remplies, la fusée peut être lancée lorsque tous les joueurs sont assis dans le module en appuyant sur « ALLUMAGE » sur la console.
+
+Les conditions suivantes doivent être remplies pour le lancement :
+
+Carburant plein
+Rapport de mélange de carburant correct
+Tous les joueurs assis
+Alimentation fournie à la rampe de lancement
+Fusée entièrement construite
+
+La console {THING:StructureModularRocketCommand01} affiche l'état actuel de ces conditions. Il ne nécessite pas d'atmosphère pour décoller - l'atmosphère de votre combinaison est suffisante.
+
+{HEADER :Moteur de fusée modulaire}
+
+Le {THING:StructureModularRocketEngine01} est capable de soulever jusqu'à sept modules (y compris lui-même).
+
+{HEADER :Réservoir de carburant de fusée modulaire}
+
+Le {THING:StructureModularRocketFueltank01} nécessite un mélange 2:1 de {GAS:Volatiles} et de {GAS:Oxygen}. Si le mélange dépasse ces proportions, ou si vous placez d'autres gaz dans le réservoir, la console {THING:StructureModularRocketCommand01} affichera une erreur "Non valide".
+
+          </Text>
+        </StationpediaPage>
+    <StationpediaPage>
       <Key>RocketShuttlePage</Key>
       <Title>Capsule de fusée</Title>
       <Text>Ce sont les modules de navette, utilisés pour voyager entre les mondes. {THING:StructureLaunchPad} est requis.</Text>
