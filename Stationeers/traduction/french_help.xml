@@ -113,7 +113,7 @@ Une fois que vous avez résolu la position des contacts, vous pourrez appuyer su
       <Title>Construction</Title>
       <DisplayFilter>Guides</DisplayFilter>
       <Text>{HEADER:Commencement}
-En règle générale, vous utiliserez {LINK:KitPage;kits} pour lancer la construction, puis une variété de {LINK:ToolPage;tools} et de {LINK:ResourcePage;resources} pour terminer. Portez une attention particulière au nombre de pièces de votre kit nécessaire pour construire ce que vous avez sélectionné, car certaines structures nécessitent plus d'une pile pour être consommées. Pour certains kits, vous aurez plusieurs options, utilisez la {COLORRED:Scroll Wheel} pour changer l'option actuelle que vous cherchez à construire.
+En règle générale, vous utiliserez {LINK:KitPage;kits} pour lancer la construction, puis une variété de {LINK:ToolPage;tools} et de {LINK:ResourcePage;resources} pour terminer. Portez une attention particulière au nombre de pièces de votre kit nécessaire pour construire ce que vous avez sélectionné, car certaines structures nécessitent plus d'une pile pour être consommées. Pour certains kits, vous aurez plusieurs options, utilisez la {COLORRED:Molette} pour changer l'option actuelle que vous cherchez à construire.
 
 {HEADER:États de construction}
 Certaines structures auront plusieurs états de construction qui nécessitent différentes combinaisons pour se terminer. Votre info-bulle vous indiquera la combinaison dont vous avez besoin pour compléter la structure. Parfois, vous aurez besoin d'avoir deux objets, un dans chaque main, pour terminer un état de construction. Certains outils devront d'abord être activés, ce qui peut être fait en appuyant sur {KEY:ToggleHandPower} pendant qu'il est dans votre main active.
@@ -296,8 +296,28 @@ Vous trouverez ci-dessous les identifiants WORLD TRAVEL. Vous pouvez les utilise
        
 Écrivez simplement le hachage dans la variable de réglage sur {THING:StructureLaunchPad} avec un {THING:StructureLogicWriter} et un {THING:StructureLogicMemory}. Remarque : Vous pouvez cliquer sur un hachage pour le copier dans le presse-papiers.
 {LIST}{WORLD_HASHES}{/LIST}
+          </Text>
+        </StationpediaPage>
+        <StationpediaPage>
+      <Key>RocketShuttlePage</Key>
+      <Title>Navette spatiale</Title>
+      <Text>Ce sont les modules de la navette spatiale, utilisés pour voyager entre les mondes. {THING:StructureLaunchPad} est requis.
+{HEADER :Liste des modules de navette de fusée}
+{LIST_OF_ROCKET_SHUTTLE}
       </Text>
-    </StationpediaPage>
+   </StationpediaPage>
+
+   <StationpediaPage>
+      <Key>WeatherPage</Key>
+      <Title>Météo</Title>
+      <DisplayFilter>Guides</DisplayFilter>
+      <Text>Les planètes du système solaire ne sont pas aussi calmes qu'elles le paraissent. Après sept jours sur n'importe quel monde doté d'une atmosphère, les forces impénétrables de la nature entrent en action, frappant les Stationeers imprudents avec des blizzards, des tempêtes de poussière et des événements volcaniques.
+En tant que tel, l'{LINK:ODA;ODA} recommande que les Stationeers fraîchement déployés créent une base hermétique dans les 7 jours suivant l'atterrissage.
+Tout objet dynamique laissé à l'extérieur lors d'une tempête - sur Mars, Loulan, Vulcain ou Europe - risque d'être soufflé très, très loin, y compris votre atterrisseur.
+De même, sachez que les panneaux solaires sont fragiles et peuvent voir leur vitre se briser, voire parfois être détruite par une tempête suffisamment féroce. Pendant les tempêtes, leur production est également considérablement réduite.
+      </Text>
+   </StationpediaPage>
+
     <!--
     ~~~~~~~~~~~~~~~~~~~~~~~~~
     |                     TEMPLATES               |
@@ -357,5 +377,136 @@ Pression de fusion {0}</Text>
       <Key>GasPageFlamableTemplate</Key>
       <Text>Limite d&apos;embrassement {0} à {1}</Text>
     </StationpediaPage>
+
+<StationpediaPage>
+      <Key>NutritionPage</Key>
+      <Title>Faim et nutrition</Title>
+      <DisplayFilter>Guides</DisplayFilter>
+      <Text>{HEADER:FAIM}
+
+Les stationeers finissents par avoir faim, mais tous les aliments ne sont pas créés égaux. De plus, votre taux de faim varie en fonction des paramètres et de la difficulté. Manger ne consommera que la partie d'un article suffisante pour restaurer votre faim à 100%.
+
+Les stationeers reçoivent des provisions de nourriture telles que {LINK:Agrizero;Agrizero} {THING:ItemCerealBar} dans leur atterrisseur à leur arrivée sur un nouveau monde. Lorsque ceux-ci sont épuisés, vous devez trouver de nouvelles sources de subsistance - comme cultiver les vôtres, à partir des graines fournies, ou contacter un {LINK:TradingPage;Trader}.
+
+{EN-TÊTE :NUTRITION}
+
+Manger des ingrédients crus satisfera moins la faim que les repas, c'est-à-dire remplacera une plus petite proportion de votre faim. Les éléments de base de la nourriture sont créés à l'aide de systèmes {LINK:OrganicPage;hydroponics}. Ceux-ci peuvent être transformés en ingrédients de recette à l'aide du {THING:ApplianceReagentProcessor}, puis transformés en repas à l'aide d'un {THING:ApplianceMicrowave} ou d'un {THING:StructureAutomatedOven}.
+
+Votre taux de faim peut être ajusté dans le menu principal des paramètres en ajustant le curseur Taux de faim/hydratation dans les paramètres. Notez que le curseur de la faim régit également votre {LINK:HydrationPage;Thirst}.
+</Text>
+    </StationpediaPage>
+
+    <StationpediaPage>
+      <Key>FarmingPage</Key>
+      <Title>Croissance Alimentaire</Title>
+      <DisplayFilter>Guides</DisplayFilter>
+      <Text>Pour survivre sur des mondes extraterrestres, l'{LINK:ODA;ODA} s'attend à ce que tous les {LINK:Stationeers;Stationeers} mettent en place des systèmes {LINK:OrganicPage;hydroponic} viables ou contactent les ressources locales enregistrées {LINK:TradingPage;traders}.
+
+{HEADER :CONFIGURATION}
+
+Lors de la configuration de votre système hydroponique, vous aurez besoin de {LINK:OrganicPage;seeds}. Alternativement, vous pouvez planter la nourriture elle-même.
+
+L'équipement hydroponique commun de Stationeer comprend :
+
+- {THING:DynamicHydroponics}
+- {THING:ItemHydroponicTray}
+- {THING:ItemKitHydroponicStation}
+- {THING:StructureHarvie}
+
+Tous les systèmes hydroponiques nécessitent de l'eau, de la lumière du soleil et le bon mélange de gaz - les plantes ont besoin de {GAS:CarbonDioxide} et produisent de l'oxygène (sauf pour {THING:ItemAlienMushroom}). Les plantes ne pousseront pas dans la mauvaise atmosphère. Si les plantes n'ont pas assez de lumière, vous devrez construire un {THING:StructureGrowLight}.
+
+Votre système dépendra des ressources et du temps disponibles, mais un système agricole bien conçu peut être presque entièrement automatisé avec suffisamment de temps et de ressources.
+
+{EN-TÊTE : RÉCOLTE}
+
+La plupart des plantes ont plusieurs stades de croissance. Les premières étapes sont la croissance de la plante tout au long de son cycle de vie. Au cours de la troisième phase, les graines peuvent être récoltées à partir de la plante. Dans la quatrième phase, la plante produira des fruits. Après cela, à moins qu'elle ne soit nettoyée, la plante mourra.
+
+{EN-TÊTE : ENGRAIS}
+
+L'engrais modifie les processus de croissance des plantes et est créé par le {THING:PortableComposter} et le {THING:StructureAdvancedComposter} en utilisant la matière {LINK:OrganicPage;organic}.
+
+Les effets de l'engrais dépendent de ses ingrédients :
+
+- {LINK:OrganicPage;Food} augmente le RENDEMENT DES PLANTES individuelles jusqu'à 3 éléments
+- {THING:DecayedFood} augmente la VITESSE DE CROISSANCE des plantes jusqu'à 3 fois
+- {THING:ItemBiomass} augmente le NOMBRE DE CYCLES DE CROISSANCE pendant lesquels l'engrais dure jusqu'à un maximum de 5
+
+L'effet de ces ingrédients dépend de leurs proportions respectives dans le composteur lorsque le traitement est activé. L'engrais est produit dans un rapport de 1:3 d'engrais aux ingrédients. Lors du traitement, {GAS:Nitrogen} et {GAS:Volatiles} sont libérés, ainsi qu'une petite quantité de chaleur.
+</Text>
+    </StationpediaPage>
+
+    <StationpediaPage>
+      <Key>DecayPage</Key>
+      <Title>Décomposition Alimentaire</Title>
+      <DisplayFilter>Guides</DisplayFilter>
+      <Text>Les aliments se décomposent avec le temps en {THING:DecayedFood}, à moins qu'ils ne soient réfrigérés dans une atmosphère sutable. La vitesse exacte de décomposition varie individuellement par :
+
+- TEMPÉRATURE - La réfrigération ralentira la décomposition, mais de nombreux aliments seront endommagés par une exposition à une pression extrêmement basse, ainsi qu'à une chaleur extrême. La température optimale est de 0 kelvin (-272 C).
+
+- TYPE D'ALIMENT - Chaque type de {LINK:OrganicPage;food} a ses propres propriétés de décomposition. {THING:ItemTomatoSoup} dure beaucoup plus longtemps qu'un {THING:ItemTomato}, par exemple.
+
+- PRESSION - Les aliments se décomposent plus rapidement lorsque la pression descend en dessous de 1 atmosphère (101 kPa). La décomposition se produit de manière exponentielle plus rapidement lorsque l'atmosphère se rapproche d'un vide parfait. Il n'y a aucun effet des pressions plus élevées.
+
+- ATMOSPHERE - Différents gaz peuvent ralentir et accélérer le processus de décomposition. Le processus tiendra compte des rapports de gaz respectifs dans les atmosphères mixtes lors du calcul du modificateur de désintégration. Les taux suivants s'appliquent à tous les aliments :
+
+> {GAZ:Oxygène} x 1,3
+> {GAZ:Azote} x 0,6
+> {GAZ:Dioxyde de Carbone} x 0,8
+> {GAZ:Volatiles} x 1
+> {GAZ : Polluant} x 3
+> {GAZ:Protoxyde d'azote} x 1,5
+> {GAZ:Eau} x 2
+> Vide - voir PRESSION (ci-dessus).
+</Text>
+    </StationpediaPage>
+
+    <StationpediaPage>
+      <Key>HydrationPage</Key>
+      <Title>Soif + hydratation</Title>
+      <DisplayFilter>Guides</DisplayFilter>
+      <Text>Votre petit Stationeer  a besoin de boire de l'eau régulièrement. Cependant, des réglementations obscures et peut-être erronées {LINK:ODA;ODA} en matière de santé et de sécurité ont longtemps refusé aux Stationeers le droit à des mécanismes d'hydratation dans leur combinaison. Au lieu de cela, ils doivent prendre des pauses régulières pour ouvrir leur casque et boire de l'eau. Le faire dans un environnement non pressurisé est déconseillé.
+
+À quelle fréquence boire? Ceci est déterminé par votre niveau de difficulté, la chaleur de la planète et combien vous aimez bouger votre corps.
+
+L'eau se présente sous plusieurs formes. Au moins une {THING:ItemWaterBottle} est fournie aux Stationeers dans le cadre de leurs rations lors de l'atterrissage sur de nouvelles planètes, avec plus dans vos caisses d'atterrisseur. Ceux-ci peuvent être remplis à l'aide d'un {THING:ItemWaterBottleFiller}, qui doit lui-même être connecté à un réseau de conduites de liquide. Le réseau lui-même peut être rempli à l'aide d'un {THING:StructureIceCrusher} avec une réserve de glace appropriée.
+
+Votre taux de soif peut être ajusté dans le menu principal des paramètres en ajustant votre curseur de taux de faim/hydratation.
+</Text>
+    </StationpediaPage>
+
+    <StationpediaPage>
+      <Key>EVAPage</Key>
+      <Title>Combinaisons EVA</Title>
+      <DisplayFilter>Guides</DisplayFilter>
+      <Text>Votre combinaison spatiale vous offre une atmosphère portable, avec des réglages de pression et de climatisation (température) réglables, ainsi qu'un système d'avertissement qui vous alertera si l'atmosphère à l'intérieur de la combinaison devient dangereuse. Il fonctionne en conjonction avec un casque approprié pour fonctionner correctement, ainsi que des cartouches de gaz et des filtres appropriés dans les différentes fentes de la combinaison. Ceux-ci devront être changés régulièrement, et peuvent également être rechargés (ou vidangés) à l'aide d'un {THING:StructureSuitStorage}.
+
+Il existe plusieurs combinaisons, dont la {THING:ItemEvaSuit} et la plus résistante à la pression et à la température {THING:ItemHardSuit}.
+
+Les différentes lectures de votre combinaison se trouvent en bas à droite de l'écran. Appuyez sur la touche numérique appropriée (2 pour afficher un panneau indiquant ses emplacements et ses paramètres. Ceux-ci incluent :
+
+- A/C marche/arrêt (c'est-à-dire contrôle de température marche/arrêt)
+- Filtres activés / désactivés
+- Marche/arrêt de l'air
+- Pression Up(Haut) / (Bas)Down (avec une plage de 0kPA à 202kPa, ou 0-2 atmosphères terrestres)
+- Température Up(Haut) / (Bas)Down (avec une plage de 0°C à 60°C)
+
+Les costumes contiennent 6 à 8 emplacements :
+- Réservoir d'air (x1) - insérez une cartouche ou une cartouche intelligente contenant un mélange de gaz respirable, par exemple {GAS:Oxygen} ou {GAS:Nitrogen}/{GAS:Oxygen} 35/65.
+- Réservoir de déchets (x1) - recueille les gaz éliminés par les filtres
+- Support de vie (x1) - contient une batterie, qui alimente votre A/C, vos lumières, etc.
+- {SLOT:GasFilter} (x3) - nécessite au moins un {SLOT:ItemGasFilterCarbonDioxide} (si humain), en fonction de votre mélange de gaz respirable. Notez qu'un {THING:ItemHardSuit} a 4 emplacements de filtre.
+- IC - {THING:ItemHardSuit} uniquement.
+
+Pression : doit être réglée sur 50-100 KPa (0,5 à 1 atmosphère terrestre). Les humains dans le jeu tolèrent jusqu'à ~250kPa et peuvent survivre jusqu'à ~300kPA.
+
+Température : normalement réglée sur 18-21°C, les humains dans le jeu préférant 10-29°C, tolérant 0-39°C et survivant jusqu'à 49°C. À des températures plus élevées, votre A/C consommera plus d'énergie de la batterie pour maintenir la température interne.
+
+Filtres : le filtre par défaut est le filtre {GAS:CarbonDioxide}, qui capture le gaz généré par les humains lors de l'expiration. Si vous n'utilisez pas 100 % de {GAS:Oxygen} dans votre gaz respiratoire, ajoutez des filtres supplémentaires, par exemple si vous mélangez 25 % de {GAS:Oxygen} + 75 % de {GAS:Nitrogen}, l'azote s'accumulera dans votre combinaison au fil du temps et vous étouffer, à moins que vous n'ayez un filtre à azote. Si vous avez les bons filtres et le bon gaz respirable, mais que vous rencontrez toujours des problèmes, utilisez la fonction «Flush» de votre Space Helmet. Des avertissements d'oxygène faible/critique retentiront lorsque vos filtres cesseront de fonctionner.
+
+Si elle est endommagée, votre combinaison peut être réparée en tenant du ruban adhésif dans votre main et en utilisant le bouton "activer".
+</Text>
+    </StationpediaPage>
+
+
   </HelpPage>
 </Language>
