@@ -1,4 +1,7 @@
-# Traduction-FR
+![alt text](https://github.com/brest0ou/Traduction-FR/blob/master/Preview.png)
+
+# Traduction-FR!
+
 Traduction Française du jeu Stationeers .
 
 ## POURQUOI ?
