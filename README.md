@@ -12,8 +12,8 @@ Même si je comprend l'anglais je lis plus facilement le français et j'aime jou
 
 ## PS : ⬇️
 
-Je vais faire cela pendant mon temp-libre et je ne suis pas un professionnel de la langue française, soyez indulgent je vais faire de mon mieux,
-n'hésitez pas à commenter et me dire si il y'a une faute quelque part que j'aurais louper ou quelque chose qu'il faudrait rectifier je compte aussi sur vous!.
+Je vais faire cela pendant mon temp-libre soyez indulgent je vais faire de mon mieux,
+n'hésitez pas à commenter et me dire si il y'a une faute quelque part que j'aurais louper ou quelque chose qu'il faudrait réctifier je compte aussi sur vous!.
 
 ## PETIT MOT DE FIN 👦
 
