@@ -1,4 +1,3 @@
-<!-- Traduit par Brest0ou -->
 <Language xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Code>FR</Code>
   <HelpPage>
@@ -97,7 +96,7 @@
 
 Le {THING:StructureModularRocketCargo01} peut contenir deux caisses à dix emplacements. Vous pouvez avoir plusieurs modules de fret sur votre fusée. La fusée peut soulever jusqu'à sept modules au total.
 
-{HEADER :Commande de fusée modulaire}
+{HEADER:Commande de fusée modulaire}
 
 Le {THING:StructureModularRocketCommand01} doit être placé au-dessus de la fusée. Il évaluera l'état de préparation de la fusée pour le vol. Une fois toutes les conditions remplies, la fusée peut être lancée lorsque tous les joueurs sont assis dans le module en appuyant sur « ALLUMAGE » sur la console.
 
@@ -111,11 +110,11 @@ Fusée entièrement construite
 
 La console {THING:StructureModularRocketCommand01} affiche l'état actuel de ces conditions. Il ne nécessite pas d'atmosphère pour décoller - l'atmosphère de votre combinaison est suffisante.
 
-{HEADER :Moteur de fusée modulaire}
+{HEADER:Moteur de fusée modulaire}
 
 Le {THING:StructureModularRocketEngine01} est capable de soulever jusqu'à sept modules (y compris lui-même).
 
-{HEADER :Réservoir de carburant de fusée modulaire}
+{HEADER:Réservoir de carburant de fusée modulaire}
 
 Le {THING:StructureModularRocketFueltank01} nécessite un mélange 2:1 de {GAS:Volatiles} et de {GAS:Oxygen}. Si le mélange dépasse ces proportions, ou si vous placez d'autres gaz dans le réservoir, la console {THING:StructureModularRocketCommand01} affichera une erreur "Non valide".
 
@@ -167,7 +166,7 @@ Lors de la construction, il est important de noter que la pression est mesurée 
 En tant que tels, les {LINK:Stationeers;Stationeers} ont dû créer leur propre accompagnement musical pour le travail exigeant de construction et de maintenance d'infrastructures hors du monde.
 Au centre de ce passe-temps se trouve le séquenceur pas à pas, qui permet aux Stationeers de séquencer de courts motifs musicaux ou des boucles.
 
-{HEADER: MUSIQUE FAIS MAISON - MISE EN ROUTE}
+{HEADER:MUSIQUE FAIS MAISON - MISE EN ROUTE}
 
 1 : Connectez 8 {THING:DeviceStepUnit} à votre séquenceur pas à pas via le port de données sur le côté gauche.
 
@@ -281,7 +280,7 @@ Le système de fusée automatisé est composé de quatre modules fondamentaux, p
 * MODULE DE STOCKAGE - ce module reçoit les ressources d'un module de minage via un coupleur et les stocke jusqu'au retour de la fusée. Cela inclut actuellement {THING:StructureRocketModuleSilo} pour les minerais et {THING:StructureModularRocketFueltank01} pour le gaz. Les modules de stockage peuvent être connectés à un {LINK:ImportExportPage;chute network}, mais sont fermés par défaut. Utilisez {LINK:LogicUnitPage;logic} pour le définir sur 'ouvert'.
 
 
-{HEADER :CONDITIONS DE LANCEMENT}
+{HEADER:CONDITIONS DE LANCEMENT}
 * PUISSANCE - tous les modules de la fusée doivent être alimentés. Notez que les modules sont créés "On" par défaut, mais peuvent être activés et désactivés à l'aide de connexions {LINK:LogicUnitPage;logic}.
 
 * CARBURANT - la fusée doit avoir au moins un réservoir de carburant et suffisamment de carburant pour le décollage (au moins 500 mols). Notez que la fusée nécessite également 500 mols pour atterrir ET consomme 5 mols par tick pendant la phase de déplacement.
@@ -304,7 +303,7 @@ Le mode de la fusée est défini via la valeur "activer" de l'appareil. Le mode 
 7 : Perdu
 
 
-{HEADER : COMMANDES UNIQUES DE ROCKET}
+{HEADER:COMMANDES UNIQUES DE ROCKET}
 * CARBURANT DANS LE RÉSERVOIR RESTANT - Obtient le carburant restant dans le réservoir de carburant de votre fusée.
 * COÛT DE RETOUR DE CARBURANT - Obtient le coût du carburant pour ramener la fusée dans votre monde actuel.
 * ROCKET MODE - Obtient la valeur actuelle du RocketMode (0-7).
@@ -335,7 +334,7 @@ Vous trouverez ci-dessous les identifiants WORLD TRAVEL. Vous pouvez les utilise
       <Key>RocketShuttlePage</Key>
       <Title>Navette spatiale</Title>
       <Text>Ce sont les modules de la navette spatiale, utilisés pour voyager entre les mondes. {THING:StructureLaunchPad} est requis.
-{HEADER :Liste des modules de navette de fusée}
+{HEADER:Liste des modules de navette de fusée}
 {LIST_OF_ROCKET_SHUTTLE}
       </Text>
    </StationpediaPage>
@@ -435,7 +434,7 @@ Votre taux de faim peut être ajusté dans le menu principal des paramètres en 
       <DisplayFilter>Guides</DisplayFilter>
       <Text>Pour survivre sur des mondes extraterrestres, l'{LINK:ODA;ODA} s'attend à ce que tous les {LINK:Stationeers;Stationeers} mettent en place des systèmes {LINK:OrganicPage;hydroponic} viables ou contactent les ressources locales enregistrées {LINK:TradingPage;traders}.
 
-{HEADER :CONFIGURATION}
+{HEADER:CONFIGURATION}
 
 Lors de la configuration de votre système hydroponique, vous aurez besoin de {LINK:OrganicPage;seeds}. Alternativement, vous pouvez planter la nourriture elle-même.
 
@@ -539,7 +538,18 @@ Filtres : le filtre par défaut est le filtre {GAS:CarbonDioxide}, qui capture l
 Si elle est endommagée, votre combinaison peut être réparée en tenant du ruban adhésif dans votre main et en utilisant le bouton "activer".
 </Text>
     </StationpediaPage>
+<StationpediaPage>
+          <Key>GeneticsPage</Key>
+          <Title>Génétique</Title>
+          <Text>Les plantes ont un ensemble de gènes qui modifient leur comportement. Les gènes d'une plante seront manipulés de plusieurs façons, à la fois naturellement et artificiellement. Lorsqu'une plante produit des fruits ou des graines, elle transmet sa génétique avec une petite mutation aléatoire.
 
+          En plus des mutations aléatoires, l'état d'une plante au cours de sa vie peut également affecter ses gènes - par exemple, si une plante manque d'eau, alors qu'elle peut affecter la vitesse de croissance et le rendement des plantes, la progéniture recevra des gènes qui lui feront nécessiter moins d'eau. . De cette façon, vous pouvez manipuler les conditions idéales de votre culture.
+
+          Il existe un certain nombre d'outils dont vous aurez besoin pour gérer efficacement vos cultures : {THING:ItemPlantSampler} et {THING:AppliancePlantGeneticAnalyzer}. Ces outils vous permettent d'échantillonner une plante en croissance et de voir l'état de ses gènes.
+
+          La génétique des plantes n'est pas une science exacte et nécessitera des essais et des erreurs et des tentatives répétées avant de pouvoir atteindre vos objectifs. {LIST_OF_GENES} {LIST_OF_GENETIC_DEVICES}
+          </Text>
+      </StationpediaPage>
 
   </HelpPage>
 </Language>
