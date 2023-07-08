@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <DifficultySettings>
+        <DifficultySetting>
+            <Name>Facile</Name>
+            <Description>Un jeu plus détendu, avec moins d'oxygène, de nourriture et d'eau. Vous survivrez plus longtemps dans des environnements toxiques. La réapparition n'est pas un problème.</Description>
+            <HungerRate>0.5</HungerRate>
+            <HydrationRate>0.5</HydrationRate>
+            <OxygenRate>1.0</OxygenRate>
+            <LungDamageRate>0.02</LungDamageRate>
+            <LifeFunctionLoggedOut>0.0</LifeFunctionLoggedOut>
+            <EatWhileHelmetClosed>true</EatWhileHelmetClosed>
+            <DrinkWhileHelmetClosed>true</DrinkWhileHelmetClosed>
+            <StartingCondition>Default</StartingCondition>
+            <RespawnCondition>Easy</RespawnCondition>
+        </DifficultySetting>
+        <DifficultySetting>
+            <Name>Normal</Name>
+            <Description>Vous devrez travailler dur pour rester en vie. Planifier l'avenir est la clé de la survie, car la nourriture, l'eau et l'oxygène peuvent manquer. La réapparition ne vous fournira qu'un équipement limité</Description>
+            <HungerRate>1.0</HungerRate>
+            <HydrationRate>1.0</HydrationRate>
+            <OxygenRate>2.0</OxygenRate>
+            <LungDamageRate>0.25</LungDamageRate>
+            <LifeFunctionLoggedOut>0.1</LifeFunctionLoggedOut>
+            <EatWhileHelmetClosed>false</EatWhileHelmetClosed>
+            <DrinkWhileHelmetClosed>false</DrinkWhileHelmetClosed>
+            <StartingCondition>Default</StartingCondition>
+            <RespawnCondition>Normal</RespawnCondition>
+        </DifficultySetting>
+        <DifficultySetting>
+            <Name>Stationeer</Name>
+            <Description>Une expérience stimulante. Vous aurez besoin de vastes systèmes de survie et de systèmes hydroponiques pour rester en vie. Une mauvaise respiration peut vous tuer. Vous réapparaissez sans costume et sans équipement.</Description>
+            <HungerRate>1.5</HungerRate>
+            <HydrationRate>1.5</HydrationRate>
+            <OxygenRate>4.0</OxygenRate>
+            <LungDamageRate>1.0</LungDamageRate>
+            <LifeFunctionLoggedOut>1.0</LifeFunctionLoggedOut>
+            <EatWhileHelmetClosed>false</EatWhileHelmetClosed>
+            <DrinkWhileHelmetClosed>false</DrinkWhileHelmetClosed>
+            <StartingCondition>Default</StartingCondition>
+            <RespawnCondition>Stationeer</RespawnCondition>
+        </DifficultySetting>
+    </DifficultySettings>
+</GameData>

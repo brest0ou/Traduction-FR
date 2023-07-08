@@ -5059,7 +5059,6 @@ Pour les plages de température et de pression, quatre gènes apparaissent sur l
       <Value>Échantillonneur de plantes</Value>
       <Description>L'échantillonneur de plantes vous permet de prélever un échantillon {LINK:GeneticsPage;gene} d'une plante en croissance. L'échantillonneur peut ensuite être placé dans le {THING:AppliancePlantGeneticAnalyzer} pour atteindre et interpréter les résultats.</Description>
     </RecordThing>
-    <RecordThing>
   </Things>
   <Slots>
     <Record>
@@ -8041,6 +8040,18 @@ C’est une loi universelle inébranlable que tout ce qui dépasse 11 sera viole
       <Value>PRESSION</Value>
     </Record>
     <Record>
+      <Key>CartridgeAtmosAnalyserTemperatureTitle</Key>
+      <Value>TEMPERATURE</Value>
+    </Record>
+    <Record>
+      <Key>CartridgeAtmosAnalyserConvectedTitle</Key>
+      <Value>CONVECTÉ</Value>
+    </Record>
+    <Record>
+      <Key>CartridgeAtmosAnalyserRadiatedTitle</Key>
+      <Value>RADIÉE</Value>
+    </Record>
+    <Record>
       <Key>CartridgeAtmosAnalyserTitle</Key>
       <Value>ANALYSE DE L’ATMOSPHERE</Value>
     </Record>
@@ -8211,30 +8222,6 @@ C’est une loi universelle inébranlable que tout ce qui dépasse 11 sera viole
     <Record>
       <Key>ElectronicReaderPressure</Key>
       <Value>Pression</Value>
-    </Record>
-    <Record>
-      <Key>NetworkAnalyserNetwork</Key>
-      <Value>CABLE RESEAU</Value>
-    </Record>
-    <Record>
-      <Key>NetworkAnalyserActual</Key>
-      <Value>ACTUEL</Value>
-    </Record>
-    <Record>
-      <Key>NetworkAnalyserPotential</Key>
-      <Value>POTENTIEL</Value>
-    </Record>
-    <Record>
-      <Key>NetworkAnalyserDevices</Key>
-      <Value>APPAREILS</Value>
-    </Record>
-    <Record>
-      <Key>NetworkAnalyserRequired</Key>
-      <Value>REQUIS</Value>
-    </Record>
-    <Record>
-      <Key>NetworkAnalyserTitle</Key>
-      <Value>ANALYSEUR RÉSEAU</Value>
     </Record>
     <Record>
       <Key>CartridgeElectronicReaderTitle</Key>
@@ -9638,6 +9625,34 @@ Le programme Stationeers, qui est fondamentalement ouvert à toute l’humanité
      <Record>
       <Key>StationpediaBeginnerGuides</Key>
       <Value>Stationpedia Guide du débutant</Value>
+    </Record>
+    <Record>
+      <Key>NetworkAnalyserNetwork</Key>
+      <Value>RÉSEAU DE CÂBLE</Value>
+    </Record>
+    <Record>
+      <Key>NetworkAnalyserActual</Key>
+      <Value>ACTUEL</Value>
+    </Record>
+    <Record>
+      <Key>NetworkAnalyserPotential</Key>
+      <Value>POTENTIEL</Value>
+    </Record>
+    <Record>
+      <Key>NetworkAnalyserDevices</Key>
+      <Value>APPAREILS</Value>
+    </Record>
+    <Record>
+      <Key>NetworkAnalyserRequired</Key>
+      <Value>REQUIS</Value>
+    </Record>
+    <Record>
+      <Key>NetworkAnalyserTitle</Key>
+      <Value>ANALYSEUR RÉSEAU</Value>
+    </Record>
+    <Record>
+      <Key>CartridgeElectronicReaderTitle</Key>
+      <Value>ENCYCLOPÉDIE</Value>
     </Record>
   </Interface>
   <Colors>
@@ -12018,7 +12033,7 @@ Statut : {LOCAL:StatusValue}</Value>
 </Record>
 <Record>
   <Key>RequiresScrewdriver</Key>
-  <Value>Requiert un tournevis</Value>
+  <Value>Nécessite un tournevis</Value>
 </Record>
 <Record>
   <Key>RequiresScrewdriverOrLabeler</Key>
@@ -12794,7 +12809,7 @@ Statut : {LOCAL:StatusValue}</Value>
 </Record>
 <Record>
   <Key>QuantityOfGasTypeInMix</Key>
-  <Value>&lt;color=yellow&gt;{LOCAL:Quantité}&lt;/color&gt; x {LOCAL:TypeGaz}</Value>
+  <Value>&lt;color=yellow&gt;{LOCAL:Quantity}&lt;/color&gt; x {LOCAL:GasType}</Value>
 </Record>
 <Record>
   <Key>LoadingScreenDeserializeWorldLog</Key>
@@ -12904,6 +12919,7 @@ Statut : {LOCAL:StatusValue}</Value>
       <Key>HandSlotOccupied</Key>
       <Value>L'emplacement de la main est occupé</Value>
     </Record>
+  
 </GameStrings>
   <GameTip/>
 </Language>
